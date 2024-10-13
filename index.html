@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/5b07779d-037a-4561-80cd-44f74cd04388.jpg" type="image/png">
+  <title>Professional To-Do List</title>
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://cdn.tailwindcss.com"></script>
+ <style>
+    .arizonia-regular {
+  font-family: "Arizonia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col">
+  <!-- To-Do List Container -->
+<nav class="bg-green-500 flex flex-row justify-between p-4 poppins-regular">
+    <div>
+       <p class="arizonia-regular text-3xl">Pvpkishore</p>
+    </div>
+    <div class="font-snas">
+        <u1 class="flex flex-row list-none gap-2 justify-center">
+            <li><a href="https://www.linkedin.com/in/ponnala-venkata-padma-kishor-76679326a/" target="_blank">Linkedin</a></li>
+            <li><a href="https://github.com/Pvpkishore" target="_blank">Github</a></li>
+        </u1>
+     </div>
+</nav>
+  <div class="max-w-2xl mx-auto my-10 p-6 bg-white rounded-lg shadow-lg poppins-regular">
+    <h1 class="text-2xl font-bold text-center text-gray-800">To-Do List</h1>
+
+    <!-- Task Input Section -->
+    <div class="task-input mt-6 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+      <input
+        type="text"
+        id="task"
+        class="flex-grow p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+        placeholder="Enter task..."
+      />
+      <input
+        type="number"
+        id="duration"
+        class="flex-grow p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+        placeholder="Duration (mins)"
+      />
+      <button
+        class="w-full sm:w-auto p-3 bg-green-500 text-white rounded hover:bg-green-600"
+        onclick="addTask()"
+      >Add Task</button>
+    </div>
+
+    <!-- Task List Section -->
+    <div class="task-list mt-8">
+      <h2 class="text-xl font-semibold text-center text-gray-700">Tasks</h2>
+      <ul id="tasks" class="mt-4 space-y-4"></ul>
+    </div>
+  </div>
+<div class="mt-48 place-slef-baseline">
+ <footer class="bg-slate-800 text-white p-3 poppins-regular text-center ">
+    <p>@ 2024 pvpkishore</p>
+ </footer>
+</div>
+ <script src="script.js"></script>
+</body>
+</html>
