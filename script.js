@@ -1,4 +1,4 @@
-function addTask() {
+ function addTask() {
   const taskInput = document.getElementById('task');
   const durationInput = document.getElementById('duration');
   const tasksList = document.getElementById('tasks');
@@ -18,11 +18,11 @@ function addTask() {
   taskItem.style.opacity = 0;  // Initially hidden for GSAP animation
 
   taskItem.innerHTML = 
-    `<span class="task flex-grow text-gray-800">${taskValue}</span>
+    <span class="task flex-grow text-gray-800">${taskValue}</span>
     <span class="timestamp text-gray-500 ml-4">${timestamp}</span>
     <span class="countdown text-red-500 ml-4">${formatTime(durationValue * 60)}</span>
     <button class="gradient-button success-btn text-white mx-3 px-3 py-1 rounded" onclick="completeTask(this)">Success</button>
-    <button class="red-gradient-button text-white px-3 py-1 ml-2 rounded" onclick="deleteTask(this)">Delete</button>`
+    <button class="red-gradient-button text-white px-3 py-1 ml-2 rounded" onclick="deleteTask(this)">Delete</button>
   ;
 
   tasksList.appendChild(taskItem);
@@ -83,4 +83,4 @@ function startCountdown(element, duration) {
       element.textContent = formatTime(timeRemaining);
     }
   }, 1000); // Update every second
-}
+} 
