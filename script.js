@@ -14,7 +14,7 @@ function addTask() {
   const timestamp = new Date().toLocaleString();
 
   const taskItem = document.createElement('li');
-  taskItem.classList.add('flex', 'justify-between', 'items-center', 'bg-gray-100', 'p-4', 'rounded-lg', 'shadow-md');
+  taskItem.classList.add('flex','flex-wrap', 'justify-between', 'items-center', 'bg-gray-100', 'p-4', 'rounded-lg', 'shadow-md','poppins-regular');
   taskItem.style.opacity = 0;  // Initially hidden for GSAP animation
 
   taskItem.innerHTML = 
